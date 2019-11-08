@@ -1,4 +1,4 @@
-name: Node CI
+name: Build, Test, Scan
 
 on: [push]
 
@@ -23,7 +23,7 @@ jobs:
         npm run build --if-present
         npm test -- --coverage
       env:
-        CI: true
+        CI: 'true'
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
