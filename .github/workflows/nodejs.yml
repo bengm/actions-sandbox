@@ -24,7 +24,6 @@ jobs:
         npm test -- --coverage
       env:
         CI: 'true'
-    - name: save coverage
     - uses: actions/upload-artifact@master
       with:
         name: coverage-report
