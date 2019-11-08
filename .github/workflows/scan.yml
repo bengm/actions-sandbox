@@ -1,15 +1,15 @@
-on: push
-name: Sonar Scan
-jobs:
-  sonarCloudTrigger:
-    name: SonarCloud Trigger
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Test Coverage
-      run: npm test -- --coverage
-    - name: SonarCloud Scan
-      uses: sonarsource/sonarcloud-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+# on: push
+# name: Sonar Scan
+# jobs:
+#   sonarCloudTrigger:
+#     name: SonarCloud Trigger
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
+#     - name: Test Coverage
+#       run: npm test -- --coverage
+#     - name: SonarCloud Scan
+#       uses: sonarsource/sonarcloud-github-action@master
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
