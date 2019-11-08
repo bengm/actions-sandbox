@@ -7,11 +7,13 @@
     "react-dom": "^16.11.0",
     "react-scripts": "^3.0.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest-sonar-reporter": "^2.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --testResultsProcessor jest-sonar-reporter",
     "eject": "react-scripts eject"
   },
   "browserslist": {
@@ -40,5 +42,11 @@
         "statements": 10
       }
     }
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
   }
 }
