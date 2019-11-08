@@ -24,6 +24,10 @@ jobs:
         npm test -- --coverage
       env:
         CI: 'true'
+    - uses: actions/upload-artifact@master
+      with:
+        name: built-app
+        path: build
     - name: Commit coverage # This is the step name that will be displayed in your runs
       uses: EndBug/add-and-commit@v2.1.0 # You can change this to use a specific version
       with: # See more info about inputs below
