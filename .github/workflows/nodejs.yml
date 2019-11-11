@@ -35,7 +35,7 @@ jobs:
         author_email: na
         message: "test coverage report via pipeline automation"
         path: "."
-        pattern: "coverage/*"
+        pattern: "coverage/**"
         force: 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
