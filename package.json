@@ -30,9 +30,9 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
-      "!<rootDir>/path/to/dir/"
+      "!<rootDir>/**/*.test.{js,jsx,ts,tsx}"
     ],
     "coverageThreshold": {
       "global": {

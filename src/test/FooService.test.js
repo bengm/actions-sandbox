@@ -1,4 +1,4 @@
-import { FizService } from "../src/FooService";
+import { FizService } from "../FooService";
 
 
 it('fiz returns 1', () => {
