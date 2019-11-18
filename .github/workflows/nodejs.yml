@@ -24,4 +24,10 @@ jobs:
         npm test -- --coverage
       env:
         CI: 'true'
+    - name: Hello world action step
+      id: hello
+      uses: bengm/test-action@feature/pa11y
+      with:
+        who-to-greet: 'Mona the Octocat'
+    
    
