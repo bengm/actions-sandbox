@@ -27,7 +27,6 @@ jobs:
     - name: LFS get
       run: |
         git lfs install
-        git lfs get
     - name: Hello world action step
       id: hello
       uses: bengm/test-action@feature/a11y
