@@ -1,4 +1,4 @@
-name: Build, Test, Scan
+name: Build, Test, Scan, Test
 
 on: [push]
 
