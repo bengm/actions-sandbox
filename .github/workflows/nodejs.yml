@@ -30,7 +30,7 @@ jobs:
         npm install
     - name: Hello world action step
       id: hello
-      uses: bengm/test-action@feature/a11y
+      uses: bengm/docker-action@master
       with:
         who-to-greet: 'Mona the Octocat'
     
