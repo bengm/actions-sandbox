@@ -1,4 +1,4 @@
-name: Build, Test, Scan, 11y
+name: Build, Test, Scan, a11y
 
 on: [push]
 
