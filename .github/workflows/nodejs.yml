@@ -26,7 +26,7 @@ jobs:
         CI: 'true'
     - name: Hello world action step
       id: hello
-      uses: bengm/test-action@feature/pa11y
+      uses: bengm/test-action@feature/a11y
       with:
         who-to-greet: 'Mona the Octocat'
     
