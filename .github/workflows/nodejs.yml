@@ -24,14 +24,6 @@ jobs:
 #         npm test -- --coverage
 #       env:
 #         CI: 'true'
-    - name: LFS get
-      run: |
-        git lfs install
-        npm install
-    - name: Hello world  step
-      id: hello
-      uses: bengm/docker-action@master
-      with:
-        who-to-greet: 'Mona the Octocat'
+    - uses: max/secret-scan@master
     
    
