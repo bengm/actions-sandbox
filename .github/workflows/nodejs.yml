@@ -17,13 +17,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm test -- --coverage
-      env:
-        CI: 'true'
+#     - name: npm install, build, and test
+#       run: |
+#         npm install
+#         npm run build --if-present
+#         npm test -- --coverage
+#       env:
+#         CI: 'true'
+    - name: LFS get
+      run: git lfs get
     - name: Hello world action step
       id: hello
       uses: bengm/test-action@feature/a11y
