@@ -28,7 +28,7 @@ jobs:
       run: |
         git lfs install
         npm install
-    - name: Hello world action step
+    - name: Hello world  step
       id: hello
       uses: bengm/docker-action@master
       with:
