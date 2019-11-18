@@ -24,27 +24,4 @@ jobs:
         npm test -- --coverage
       env:
         CI: 'true'
-    - uses: actions/upload-artifact@master
-      with:
-        name: built-app
-        path: build
-    - name: Commit coverage # This is the step name that will be displayed in your runs
-      uses: EndBug/add-and-commit@v2.1.0 # You can change this to use a specific version
-      with: # See more info about inputs below
-        author_name: GitHub Actions
-        author_email: na
-        message: "test coverage report via pipeline automation"
-        path: "."
-        pattern: "coverage/*"
-        force: 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ env.GITHUB_REF }} # this is the commit ref (i.e. branch) that triggered the workflow
-    - uses: sonarsource/sonarcloud-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+   
